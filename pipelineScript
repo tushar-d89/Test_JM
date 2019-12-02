@@ -1,4 +1,4 @@
 node {
   stage 'Run JMeter Test'
-  sh '/home/ec2-user/apache-jmeter-5.2/bin/jmeter.sh -n -t /home/ec2-user/Jenkins.jmx -l test.jtl'
+  sh '/apache-jmeter-5.2/bin/jmeter.sh -n -t {WORKSPACE}/Jenkins.jmx -l test.jtl'
 }
